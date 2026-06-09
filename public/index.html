@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mary Precious — Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="logo">MP<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire">Let's Talk</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Open to work
+        </div>
+        <h1 class="hero-heading">
+          <span class="line reveal-line">Hi, I'm</span>
+          <span class="line reveal-line name-line">Mary <br><em>Precious.</em></span>
+        </h1>
+        <p class="hero-role">Backend Software Engineer</p>
+        <p class="hero-desc">
+          I build the invisible layer that makes great products work — scalable APIs, efficient databases, and clean server-side architecture. Based in <strong>Kampala, Uganda</strong>.
+        </p>
+        <div class="hero-stack">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>PostgreSQL</span>
+          <span>MongoDB</span>
+          <span>NestJS</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Ayebazibwe-Precious" target="_blank" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/Mary-Precious-Ayebazibwe" target="_blank" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="images/mary.jpeg" alt="Mary Precious">
+          <div class="photo-deco deco-1"></div>
+          <div class="photo-deco deco-2"></div>
+        </div>
+        <div class="floating-card card-1">
+          <span class="card-icon">⚡</span>
+          <div>
+            <strong>APIs Built</strong>
+            <span>15+ Projects</span>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <span class="card-icon">🎓</span>
+          <div>
+            <strong>Certified</strong>
+            <span>Refactory '25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line-anim"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="section-header">
+      <span class="section-tag">What I do</span>
+      <h2>My <em>Expertise</em></h2>
+    </div>
+
+    <div class="skills-cards">
+      <div class="skill-card-new" data-i="0">
+        <div class="skill-card-icon" style="background: linear-gradient(135deg,#667eea,#764ba2)">⚙️</div>
+        <h3>Backend Engineering</h3>
+        <p>Building robust, scalable server-side applications with Node.js and modern frameworks like Express and NestJS.</p>
+        <div class="skill-tags">
+          <span>Node.js</span><span>Express.js</span><span>NestJS</span><span>REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-card-new" data-i="1">
+        <div class="skill-card-icon" style="background: linear-gradient(135deg,#f093fb,#f5576c)">🗄️</div>
+        <h3>Database Design</h3>
+        <p>Designing efficient schemas, writing optimized queries, and managing data at scale with SQL and NoSQL databases.</p>
+        <div class="skill-tags">
+          <span>PostgreSQL</span><span>MongoDB</span><span>Schema Design</span><span>Query Optimization</span>
+        </div>
+      </div>
+
+      <div class="skill-card-new" data-i="2">
+        <div class="skill-card-icon" style="background: linear-gradient(135deg,#4facfe,#00f2fe)">🔗</div>
+        <h3>API Architecture</h3>
+        <p>Designing and documenting RESTful APIs that are clean, consistent, and built for real-world production use.</p>
+        <div class="skill-tags">
+          <span>REST Design</span><span>Postman</span><span>API Testing</span><span>MVC</span>
+        </div>
+      </div>
+
+      <div class="skill-card-new" data-i="3">
+        <div class="skill-card-icon" style="background: linear-gradient(135deg,#43e97b,#38f9d7)">🛠️</div>
+        <h3>Dev Workflow</h3>
+        <p>Comfortable with modern development workflows, version control, and collaborating in Agile/Scrum environments.</p>
+        <div class="skill-tags">
+          <span>Git & GitHub</span><span>VS Code</span><span>Agile</span><span>Debugging</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS CAROUSEL -->
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <span class="section-tag">Portfolio</span>
+      <h2>Featured <em>Projects</em></h2>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="project-card">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364)">
+            <div class="project-card-icon">📦</div>
+            <div class="project-card-label">Full Stack</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Inventory Management System</h3>
+            <p>A complete system to track products, stock levels, and transactions in real time. RESTful API-powered with a clean, responsive UI.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Pug</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Ayebazibwe-Precious" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)">
+            <div class="project-card-icon">🌐</div>
+            <div class="project-card-label">Frontend</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Portfolio Website</h3>
+            <p>A responsive, SEO-optimised personal portfolio built with vanilla HTML, CSS, and JavaScript — designed for accessibility and performance.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Ayebazibwe-Precious" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #2d1b69, #11998e, #38ef7d)" style="opacity:0.85">
+            <div class="project-card-icon">🔧</div>
+            <div class="project-card-label">API Project</div>
+          </div>
+          <div class="project-card-body">
+            <h3>RESTful API Service</h3>
+            <p>Designed and implemented a production-ready RESTful API with authentication, validation, error handling, and full CRUD operations.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Ayebazibwe-Precious" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card add-card">
+          <div class="add-card-inner">
+            <div class="add-icon">+</div>
+            <h3>More Coming</h3>
+            <p>Follow my GitHub for new projects I'm actively building.</p>
+            <a href="https://github.com/Ayebazibwe-Precious" target="_blank" class="btn-primary" style="margin-top:1rem">Visit GitHub</a>
+          </div>
+        </div>
+
+        <!-- Clones for infinite loop -->
+        <div class="project-card clone">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364)">
+            <div class="project-card-icon">📦</div>
+            <div class="project-card-label">Full Stack</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Inventory Management System</h3>
+            <p>A complete system to track products, stock levels, and transactions in real time. RESTful API-powered with a clean, responsive UI.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Pug</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card clone">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)">
+            <div class="project-card-icon">🌐</div>
+            <div class="project-card-label">Frontend</div>
+          </div>
+          <div class="project-card-body">
+            <h3>Portfolio Website</h3>
+            <p>Responsive, SEO-optimised personal portfolio built with vanilla HTML, CSS, and JavaScript.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn">←</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button class="carousel-btn" id="nextBtn">→</button>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="strip-content">
+      <div class="strip-text">
+        <span class="section-tag">A little about me</span>
+        <h2>Building backends that <em>actually work</em></h2>
+        <p>I'm a backend-focused engineer who loves the architecture side of software — designing systems that are clean, fast, and built to scale. I graduated from Refactory Academy in 2025 and hold certifications from Microsoft and freeCodeCamp.</p>
+        <p>I speak English, Runyankore, Rutooro, and Luganda — and I bring that same multi-layered thinking to every project I build.</p>
+        <div class="certs-row">
+          <div class="cert-badge">🏆 Refactory Academy</div>
+          <div class="cert-badge">☁️ Microsoft Azure</div>
+          <div class="cert-badge">💻 freeCodeCamp</div>
+        </div>
+      </div>
+      <div class="strip-stats">
+        <div class="stat-item">
+          <strong>2+</strong>
+          <span>Years Learning & Building</span>
+        </div>
+        <div class="stat-item">
+          <strong>15+</strong>
+          <span>Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <strong>3</strong>
+          <span>Certifications Earned</span>
+        </div>
+        <div class="stat-item">
+          <strong>4</strong>
+          <span>Languages Spoken</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-glow"></div>
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-tag">Say Hello</span>
+        <h2>Let's Build <em>Something</em></h2>
+        <p class="contact-lead">Have a project, a job offer, or just want to connect? I'd love to hear from you. I usually respond within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <strong>Email me directly</strong>
+              <a href="mailto:ayebazibwemaryprecious@gmail.com">ayebazibwemaryprecious@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <strong>Call or WhatsApp</strong>
+              <a href="tel:+256789528462">+256 789 528 462</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Kampala, Uganda</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">👩‍💼</div>
+            <div>
+              <strong>Reference available</strong>
+              <span>Ms. Laura Kyongo, GroundBreaker Talents<br>+256 776 762 006</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-new" id="contactForm">
+          <div class="form-row-new">
+            <div class="field">
+              <label>Your Name</label>
+              <input type="text" name="name" required placeholder="John Doe"/>
+            </div>
+            <div class="field">
+              <label>Your Email</label>
+              <input type="email" name="email" required placeholder="john@company.com"/>
+            </div>
+          </div>
+          <div class="field">
+            <label>Subject</label>
+            <input type="text" name="subject" required placeholder="Job opportunity / Freelance project / Just saying hi"/>
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" rows="5" required placeholder="Tell me what you're working on..."></textarea>
+          </div>
+          <button type="submit" class="btn-send">
+            Send Message <span class="send-arrow">→</span>
+          </button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-new">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">MP<span>.</span></div>
+        <p>Backend Software Engineer<br>Kampala, Uganda</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/Ayebazibwe-Precious" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/Mary-Precious-Ayebazibwe" target="_blank">LinkedIn</a>
+        <a href="mailto:ayebazibwemaryprecious@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mary Precious Ayebazibwe · Built with Node.js</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
