@@ -33,38 +33,27 @@ body {
 
 /* ── Custom Cursor ── */
 .cursor {
-  width: 6px; height: 6px;
-  background: var(--white);
-  border-radius: 50%;
+  width: 20px; height: 20px;
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s, height 0.2s, background 0.2s, opacity 0.2s;
+  transform: translate(0, 0);
+  transition: opacity 0.2s;
 }
-.cursor-follower {
-  width: 28px; height: 28px;
-  border: 1.5px solid var(--accent);
-  border-radius: 4px;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%) rotate(45deg);
-  transition: all 0.15s var(--ease);
+.cursor::before {
+  content: '';
+  display: block;
+  width: 0; height: 0;
+  border-left: 10px solid var(--white);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  filter: drop-shadow(0 0 3px rgba(108,99,255,0.6));
 }
-body:has(a:hover) .cursor,
-body:has(button:hover) .cursor {
-  width: 8px; height: 8px;
-  background: var(--accent2);
+body:has(a:hover) .cursor::before,
+body:has(button:hover) .cursor::before {
+  border-left-color: var(--accent2);
+  filter: drop-shadow(0 0 5px rgba(0,212,170,0.8));
 }
-body:has(a:hover) .cursor-follower,
-body:has(button:hover) .cursor-follower {
-  width: 44px; height: 44px;
-  border-color: var(--accent2);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) rotate(0deg);
-}
-
 /* ── Nav ── */
 .nav {
   position: fixed; top: 0; left: 0; right: 0;
@@ -286,7 +275,7 @@ body:has(button:hover) .cursor-follower {
   animation-delay: 0.35s;
 }
 .hero-heading .name-line {
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   color: var(--white);
   animation-delay: 0.5s;
   letter-spacing: -0.03em;
@@ -816,9 +805,14 @@ body:has(button:hover) .cursor-follower {
   display: grid;
   grid-template-columns: 1fr 1.8fr;
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
 }
-.contact-left { display: flex; flex-direction: column; gap: 1rem; }
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
 .contact-card {
   display: flex;
   align-items: flex-start;
@@ -828,6 +822,7 @@ body:has(button:hover) .cursor-follower {
   border-radius: 14px;
   padding: 1.2rem;
   transition: border-color 0.3s, transform 0.3s;
+  flex: 1;
 }
 .contact-card:hover { border-color: rgba(108,99,255,0.4); transform: translateX(4px); }
 .contact-card-icon { font-size: 1.4rem; flex-shrink: 0; }
